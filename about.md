@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="{{ site.url | append : site.baseurl}}/images/profile_pic.jpg" alt="Profile picture" height="300px" width="300px"/>
+<img src="{{ "/images/profile_pic.jpg" | relative_url}}" alt="Profile picture" height="300px" width="300px"/>
 
 ### Welcome to my blog! 
 
