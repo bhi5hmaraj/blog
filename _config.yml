@@ -1,0 +1,21 @@
+# Dependencies
+plugins: [jemoji, jekyll-paginate]
+
+# Site settings
+title: The curse of Knowledge
+email: bs386@snu.edu.in
+description: 
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
+url: "bhi5hmaraj.github.io" # the base hostname & protocol for your site
+github_username:  bhi5hmaraj
+
+
+# Build settings
+# Github flavored markdown style
+markdown: redcarpet
+highlighter: rouge
+redcarpet:
+  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "fenced_code_blocks", "with_toc_data"]
+
+paginate: 10
+paginate_path: blog/p:num
