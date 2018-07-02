@@ -6,7 +6,7 @@ title: The curse of Knowledge
 email: bs386@snu.edu.in
 description: 
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "bhi5hmaraj.github.io" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 github_username:  bhi5hmaraj
 
 
