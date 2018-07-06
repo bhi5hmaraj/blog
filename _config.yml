@@ -3,7 +3,7 @@ plugins: [jemoji, jekyll-paginate]
 
 # Site settings
 title: The curse of Knowledge
-email: initialismOfMyName386@snu.edu.in
+email: b s 3 8 6@snu.edu.in
 description: 
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
