@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "July problem solving"
-date:   2016-07-01 15:36:03
+date:   2018-07-01 15:36:03
 categories: problem-solving
 tags: [CF, timus, explanation]
 ---
