@@ -5,7 +5,7 @@ plugins: [jemoji, jekyll-paginate]
 title: The curse of Knowledge
 email: b s 3 8 6@snu.edu.in
 description: 
-baseurl: "https://bhi5hmaraj.github.io/blog/" # the subpath of your site, e.g. /blog/
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 github_username:  bhi5hmaraj
 
