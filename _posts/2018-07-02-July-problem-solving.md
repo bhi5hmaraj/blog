@@ -64,7 +64,43 @@ You can find my solution [here](https://gist.github.com/bhi5hmaraj/325b198fb11d8
 
 More resources for Fenwick tree - [stackexchange](https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a) , [visualgo](https://visualgo.net/bn/fenwicktree)
 
-------
+
+## Day 2 (3/7/18)
+
+I took part in a Div3 contest ([#494](https://codeforces.com/contest/1003)) in CF. A and C were quite easy. B was a ad-hoc with a tricky edge case. D was my nemesis, greedy.
+
+#### [A - Polycarp's Pockets](https://codeforces.com/contest/1003/problem/A) | [Solution](https://codeforces.com/contest/1003/submission/39897712)  
+
+Since we need to pack a set which contains different items all the time, we can create a frequency distribution of all the items and then remove items based on it. So the answer would be the maximum frequency.
+
+Streams & Lambdas make the code more elegant and crisp !
+
+```java
+int n = nextInt();
+HashMap<Integer, Integer> freq = new HashMap<>();
+Arrays.stream(nextIntArray(n)).forEach(val -> freq.merge(val, 1, Integer::sum));
+println(freq.values().stream().max(Integer::compare).get());
+```
+
+#### [B - Binary String Constructing](https://codeforces.com/contest/1003/problem/B) | [Solution](https://codeforces.com/contest/1003/submission/39913868)
+
+There are 2 observations here
+
+1. Its better to start with the character with the maximum frequency. This is because of the fact that starting with the character with smaller frequency can make the solution infeasible. For example if `a = 1 b = 2 x = 2` then `101` is the only feasible solution. So starting with a character with highest frequency guarantees a solution.
+2. Combining the characters together won't change the score. 
+
+From these 2 observations we can do the following -
+
+1. Start with the character with the maximum frequency
+2. Alternate characters till we get a score of `x` 
+3. Club the remaining characters with their first occurrence (we can group it with any arbitrary position of that character.
+
+#### [C - Intense Heat](https://codeforces.com/contest/1003/problem/C) | [Solution](https://codeforces.com/contest/1003/submission/39906854)
+
+The constraints of the problem are not so high $n,k \leq 5000$ , hence any $\mathcal{O}(n \cdot k)$ should work. I coded a sliding window type of solution. 
+
+Now coming to the interesting part of the problem, looks like there is a [$\mathcal{O}(n)$](https://codeforces.com/blog/entry/60377?#comment-442444) solution to this problem using a [nice trick](https://codeforces.com/contest/1003/submission/39957991) 
+
 
 
 

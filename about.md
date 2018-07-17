@@ -12,10 +12,16 @@ I'm Bhishmaraj, a computer science undergrad from [Shiv Nadar University](https:
 
 The main reason for starting the blog is to keep track of the stuff I'm currently working and also pen down my musings. As English is not my native language, I plan to improve my writing through this blog. If you find any bugs or grammatical errors do let me know in the comments.
 
-Regarding the name of the blog "Curse of Knowledge"
- 
+
+
+##### Regarding the name of the blog  
+
 >The curse of knowledge is a cognitive bias that occurs when an individual, communicating with other individuals, unknowingly assumes that the others have the background to understand.
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Curse_of_knowledge)
+
+It's such a common phenomenon, yet not many know about this. So I wanted to kind of popularize the term. But this is just the tip of the cognitive biases iceberg. Recognizing these biases can help us in making better decisions and also to mitigate irrational behavior.  
+
+
 
 
