@@ -16,7 +16,7 @@ Lets start with a good [xkcd](https://www.xkcd.com/731/) comic
 
 
 
-These websites/channels are mostly pop-sci types. They are a good source of inspiration and provide a good source of questions to ponder upon.
+These websites/channels are mostly pop-sci types. They are a good source of inspiration and provide interesting questions to ponder upon.
 
 | Resource                                                     | Topics                       | Notes                                                        |
 | ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ |
@@ -59,4 +59,4 @@ Internet has probably created an education system which is highly scalable and c
 
 One of the courses which I really liked was the [Algorithms](https://www.coursera.org/learn/algorithms-part1) course from Princeton by Robert Sedgewick and Kevin Wayne. The exposition and the assignments have totally The course authors have put in immense efforts into the course. The assignments, tests, automatic grading systems were all top notch. In fact Kevin Wayne himself used to answer a lot of queries in the forums. But this doesn't mean that it would be a cakewalk either. The only thing you'll have to have is the motivation and the perseverance to work through the course.  This course has definitely increased my regard for what it means to take a great course 
 
-I would like to emphasis that MOOCs have their own share of disadvantages. Some MOOCs are very shallow in their curriculum. Hence even after completing the course, we don't get a in depth understanding of the subject. One could easily get intimidated by the sheer amount of content available. 
+I would like to emphasis that MOOCs have their own share of disadvantages. Some MOOCs are very shallow in their curriculum. Hence even after completing the course, we don't get a in depth understanding of the subject. One could easily get intimidated by the sheer amount of content available. Hence it's better to start with a single course and see how it goes about.
