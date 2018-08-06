@@ -1,6 +1,8 @@
 # Bhishmaraj's blog
 
-This blog is powered by Jekyll. My personal blog where I share my thoughts and use it as a journal to update on things I'm currently working on.
+My personal blog where I share my thoughts and use it as a journal to update on things I'm currently working on.
+
+This blog is powered by [Jekyll](https://jekyllrb.com/). 
 
 ### Acks
 
