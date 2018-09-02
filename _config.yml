@@ -3,7 +3,7 @@ plugins: [jemoji, jekyll-paginate]
 
 # Site settings
 title: The curse of Knowledge
-email: b s 3 8 6@snu.edu.in
+email: bhishma at cmi dot ac dot in
 description: 
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "https://bhi5hmaraj.github.io/" # the base hostname & protocol for your site

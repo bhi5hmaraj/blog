@@ -16,7 +16,7 @@ Lets start with a good [xkcd](https://www.xkcd.com/731/) comic
 
 
 
-These websites/channels are mostly pop-sci types. They are a good source of inspiration and provide interesting questions to ponder upon.
+These websites/channels are mostly pop-sci types. They are a good source of inspiration and provide interesting questions to ponder upon. For example the YouTube channels vsause and veritasium were very influential in sustaining my curiosity in physics during school days. 
 
 | Resource                                                     | Topics                       | Notes                                                        |
 | ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ |
