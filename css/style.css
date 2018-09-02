@@ -30,8 +30,9 @@ td{
 
 html, body { height: 100%; }
 
+/* serifa, Arial, sans-serif */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 200;
