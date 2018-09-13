@@ -1,27 +1,5 @@
-/* minimal table css */
-/*table{
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:2px solid #ff0000;
-}
-
-th{
-    border:2px solid #000000;
-}
-
-td{
-    border:1px solid #000000;
-}*/ 
-
-
-
 /* Base */
 /* ----------------------------------------------------------*/
-
-@font-face {
-  font-family: serifa;
-  src: url('fonts/Serifa 55 Roman.ttf') format('opentype');
-}
 
 * {
   margin: 0;
@@ -32,7 +10,8 @@ html, body { height: 100%; }
 
 /* serifa, Arial, sans-serif */
 body {
-  font-family: Arial;
+  /* using base font defined in base.scss */
+  /* font-family: Arial; */
   font-size: 16px;
   line-height: 1.5;
   font-weight: 200;
@@ -102,7 +81,7 @@ a:hover {
 }
 
 .site-title {
-  font-family: Helvetica, Arial, sans-serif;
+  /* font-family: Helvetica, Arial, sans-serif; */
   letter-spacing: -1px;
 }
 .site-header .site-title {
