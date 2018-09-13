@@ -3,6 +3,7 @@ layout: page
 title:  "Theoretical foundations of Computer Science"
 exclude: true
 ---
+
  <article id="markdown-body" class="post-content markdown-body">
  
 > The goal of the course is to brush up and build basic concepts and background required for other theoretical courses, with an emphasis on writing clear, precise proofs of mathematical statements. There are four modules: Graph theory, Combinatorics, Algebra, Probability with some possible overlap of topics across modules.
