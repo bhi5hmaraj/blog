@@ -24,7 +24,7 @@ The main reason for starting the blog is to keep track of the stuff I'm currentl
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Curse_of_knowledge)
 
-It's such a common phenomenon, yet not many people know about this. So I wanted to kind of popularize the term. But this is just the tip of the cognitive biases iceberg. Recognizing these biases can help us in making better decisions and also to mitigate irrational behavior.  
+It's such a common phenomenon, yet not many people know about this. So I wanted to popularize the term. But this is just the tip of the [cognitive biases iceberg](https://yourbias.is/). Recognizing these biases can help us in making better decisions and also to mitigate irrational behavior.  
 
 
 

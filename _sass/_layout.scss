@@ -94,6 +94,10 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    
+    // Added new
+    // position: absolute;
+    // bottom: 0;
 }
 
 .footer-heading {

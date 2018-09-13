@@ -2,7 +2,7 @@
 plugins: [jemoji, jekyll-paginate]
 
 # Site settings
-title: The curse of Knowledge
+title: The Curse of Knowledge
 email: bhishma at cmi dot ac dot in
 description: 
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
