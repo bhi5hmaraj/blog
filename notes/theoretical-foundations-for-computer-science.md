@@ -1,10 +1,9 @@
 ---
-layout: page
-title:  "Theoretical foundations of Computer Science"
+layout: post
+title:  "Theoretical Foundations for Computer Science"
 exclude: true
 ---
 
- <article id="markdown-body" class="post-content markdown-body">
  
 > The goal of the course is to brush up and build basic concepts and background required for other theoretical courses, with an emphasis on writing clear, precise proofs of mathematical statements. There are four modules: Graph theory, Combinatorics, Algebra, Probability with some possible overlap of topics across modules.
 
@@ -32,6 +31,5 @@ From the offical course [website](https://www.cmi.ac.in/~prajakta/courses/f2018/
 | Sept 12 | Pigeonhole principle: applications including<br/>Chinese remainder theorem and Erdös-Szekeres theorem, permutations and combinations, counting with and without repetitions |
 
  
-  </article>
 
 {% include comments.html %}

@@ -4,11 +4,12 @@ title: About
 permalink: /about/
 ---
 
+## Welcome to my blog! 
+
 <img src="{{ "/images/profile_pic.jpg" | relative_url}}" alt="Profile picture" height="300px" width="300px"/>
 
-### Welcome to my blog! 
 
-I'm Bhishmaraj, currently pursuing a master's degree in (Theoretical) computer science at [Chennai Mathematical Institute](https://www.cmi.ac.in/people/student-profile.php?id=bhishma). I completed my undergrad in computer science engineering from [Shiv Nadar University](https://snu.edu.in/). I hail from Madurai, India. 
+I'm Bhishmaraj, currently pursuing a master's degree in ([Theoretical](https://introtcs.org/public/lec_01_introduction.html)) computer science at [Chennai Mathematical Institute](https://www.cmi.ac.in/people/student-profile.php?id=bhishma). I completed my undergrad in computer science engineering from [Shiv Nadar University](https://snu.edu.in/). I hail from Madurai, India. 
 
 _Fun trivia_ - [De Morgan](https://en.wikipedia.org/wiki/Augustus_De_Morgan#Childhood) was born is Madurai. 
 
@@ -27,5 +28,22 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Curse_of_knowledge)
 It's such a common phenomenon, yet not many people know about this. So I wanted to popularize the term. But this is just the tip of the [cognitive biases iceberg](https://yourbias.is/). Recognizing these biases can help us in making better decisions and also to mitigate irrational behavior.  
 
 
+#### Some of the books that I'm currently reading
 
+{% include goodreads.html %}
+
+#### Interesting Blogs/Links
+
+*   [Paul Graham's Blog](http://paulgraham.com/)
+*   [Wait but Why](https://waitbutwhy.com/)
+*   [Shtetl-Optimized](https://www.scottaaronson.com/blog/)
+*   [The Morning Paper](https://blog.acolyer.org/)
+*   [SMBC](https://www.smbc-comics.com/)
+*   [Slate Star Codex](https://slatestarcodex.com/)
+*   [11011110](https://11011110.github.io/blog/)
+*   [3d pancake](http://3dpancakes.typepad.com/)
+*	[Less Wrong](https://www.lesswrong.com/)
+*	[Scott H Young](https://www.scotthyoung.com/blog/)
+*	[SMBC](https://www.smbc-comics.com/)
+*	[Dinosaur Comics](https://www.qwantz.com/)
 
