@@ -46,4 +46,6 @@ It's such a common phenomenon, yet not many people know about this. So I wanted 
 *	[Scott H Young](https://www.scotthyoung.com/blog/)
 *	[SMBC](https://www.smbc-comics.com/)
 *	[Dinosaur Comics](https://www.qwantz.com/)
+*	[Marie Curie - xkcd](https://xkcd.com/896/)
+
 
