@@ -23,6 +23,8 @@ Ok first let me clarify a few assumptions that I have made in this rant
 - I feel that the current state of education system at least the one I've been thorugh , is a sinking Titanic. But the sad fact is that most passengers don't yet know that it's a sinking ship ! Instead of finding ways to make it afloat, isn't it wise to just board a life boat ? But 
 - Too much of power/dependency is given to a single individual
 - For example let's say Alice's first exposure to math was scared by a bad teacher . The way math is structured is that a lot of topics are interrelated to each other and it is built upon the material taught earlier. Hence there is a high chance of Alice hating math as she might have had a very traumatic experience in an earlier class. 
+- Maybe it's a conspiracy theory by irrational people to reduce the chances of people learning critical thinking.
+- I could 
 
 Schools - A place where human turing machines are programmed. Too much emphasis on drills. Reduce emphasis on arithmetic. More emphasis on critical thinking and reasoning. 
 
