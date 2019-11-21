@@ -5,5 +5,7 @@ I just don't understand what took me so long to understand this. Social media ha
 3. Meaningful interaction (Sean Parker, VP guy)
 
 
+Faceook ad inferences (https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen) -> Your Information -> Your categories
+ 
 Counter arguments 
 Confirmation Bias - Maybe, but I guess (quote Finch from Person of Interest) only  the paranoid will survive the next decade. 

@@ -16,4 +16,40 @@ I haven't taken such a rigorous algorithms course anywhere. We had to prove the 
 
 ## TOC
 
-As I have already taken a course on TOC before, it was a smooth ride. Even though the exposition was kind of unmotivated the lectures were quite clear. Sometimes  
+As I have already taken a course on TOC before, it was a smooth ride. Even though the exposition was kind of unmotivated the lectures were quite clear. The problem sets and tutorials really helped in solidifying the concepts.
+
+
+
+## TFCS
+
+TFCS was kind of like a discrete math course . We had 4 modules, namely 
+
+1. Graph Theory
+2. Combinatorics
+3. Algebra (Including linear algebra)
+4. Probability
+5. Some Applications
+
+TFCS was a fun course except for the linear algebra part, which was rushed. 
+
+
+
+## Haskell
+
+Haskell was my first exposure to a pure functional language. Learn you a haskell for great good was a good resource for getting used to the language.
+
+
+
+## Logic
+
+This was my first exposure to mathematical logic. Covered a lot of interesting stuff like Monadic Second order logic, EF Games and finally some basic ideas of Godel's Incompleteness theorem. The concepts of meta theorems (basically theorems about theorems) was quite mind boggling !
+
+I felt instead of diving directly to the proofs, more intuition about how all the formalism works and some examples would have been better.
+
+
+
+## Other activities
+
+### Pondi and Mahaballipuram trip 
+
+ 

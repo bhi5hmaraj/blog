@@ -6,14 +6,20 @@ permalink: /about/
 
 ## Welcome to my blog! 
 
-<img src="{{ "/images/profile_pic.jpg" | relative_url}}" alt="Profile picture" height="300px" width="300px"/>
+<img src="{{ "/images/profile_pic_2019.jpg" | relative_url}}" alt="Profile picture" height="300px" width="300px"/>
 
 
 I'm Bhishmaraj, currently pursuing a master's degree in ([Theoretical](https://introtcs.org/public/lec_01_introduction.html)) computer science at [Chennai Mathematical Institute](https://www.cmi.ac.in/people/student-profile.php?id=bhishma). I completed my undergrad in computer science engineering from [Shiv Nadar University](https://snu.edu.in/). I hail from Madurai, India. 
 
 _Fun trivia_ - [De Morgan](https://en.wikipedia.org/wiki/Augustus_De_Morgan#Childhood) was born is Madurai. 
 
-My main interests broadly includes algorithms and problem solving. Not so long ago I used to game a lot. It's funny right now that I even owned a PS2 and a PS3. But for the last 3 years it has been replaced with competitive programming. I found it to be more addicting and interesting than gaming. I'm a die hard fan of MOOCs. I find them to be a really good way to get introduced to new subjects. Hence you'll find most of my posts revolving around these topics. 
+I am broadly interested in theoretical computer science, especially algorithms (approximation, randomized and parameterized). 
+
+Not so long ago I used to game a lot. It's funny right now that I even owned a PS2 and a PS3. But for the last 3 years it has been replaced with competitive programming. I found it to be more addicting and interesting than gaming. I'm also a die hard fan of MOOCs. I find them to be a really good way to get introduced to new subjects. Recently me and my friends got interested in [indoor rock climbing](https://goo.gl/maps/ngSee2YXmvx2m1kR6). 
+
+ <img src="{{ "/images/rock-climbing-1.png" | relative_url}}" alt="Rock1" height="500px" width="300px"/>
+
+ <img src="{{ "/images/rock-climbing-2.png" | relative_url}}" alt="Rock2" height="500px" width="300px"/>
 
 The main reason for starting the blog is to keep track of the stuff I'm currently working and also pen down my musings. As English is not my native language, I plan to improve my writing through this blog. If you find any grammatical errors do let me know in the comments.
 
