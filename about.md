@@ -20,7 +20,7 @@ Not so long ago I used to game a lot (even owned a PS2 and a PS3 !). But for the
  
  Veni                      |  Vidi                     | Vici
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="{{ "/images/rock-climbing-2.png" | relative_url}}" alt="Rock1" height="500px" width="300px"/>   |   <img src="{{ "/images/rock-climbing-1.png" | relative_url}}" alt="Rock2" height="500px" width="300px"/>   | <img src="{{ "/images/rock-climbing-3.png" | relative_url}}" alt="Rock3" height="500px" width="300px"/>
+<img src="{{ "/images/rock-climbing-2.png" | relative_url}}" alt="Rock1" height="auto" width="auto"/>   |   <img src="{{ "/images/rock-climbing-1.png" | relative_url}}" alt="Rock2" height="auto" max-width="auto"/>   | <img src="{{ "/images/rock-climbing-3.png" | relative_url}}" alt="Rock3" height="auto" width="auto"/>
 
 
 
