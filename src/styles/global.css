@@ -181,6 +181,7 @@ article {
 .home p { margin: 0 0 1rem; }
 .home hr { margin: 1.4rem 0 .7rem; border: 0; border-top: 1px solid var(--line); }
 .home-links { flex-wrap: wrap; gap: .75rem; }
+.home-theme-toggle { position: fixed; z-index: 2; top: 1.5rem; right: 1.5rem; }
 .sunlight {
   position: absolute;
   z-index: 0;
@@ -253,9 +254,8 @@ article {
   color: var(--link);
   cursor: pointer;
   font: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: .06em;
-  text-underline-offset: .17em;
+  font-size: 1.35rem;
+  line-height: 1;
 }
 .theme-toggle:hover { color: var(--accent); }
 .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }

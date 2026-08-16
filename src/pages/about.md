@@ -21,11 +21,11 @@ I was born and brought up in Madurai, Tamil Nadu. I studied computer science at 
 
 Academia turned out not to be my cup of tea. I wanted to work on things that affected people more directly, so I joined Google in Hyderabad as a software engineer. In 2024 I moved to Bengaluru to work with the Gemini for Docs team on LLM-based features such as Help me write and Refine.
 
-I now work on the AI engineering team at Littlebird AI, where I’m interested in building systems that treat the user as the principal—closer to [Gwern’s idea of a “guardian angel”](https://gwern.net/guardian-angel)—and act in service of the user’s [coherent extrapolated volition (CEV)](https://en.wikipedia.org/wiki/Coherent_extrapolated_volition).
+I now work on the AI engineering team at Littlebird AI, where I’m interested in building systems that treat the user as the principal, closer to [Gwern’s idea of a “guardian angel”](https://gwern.net/guardian-angel), and act in service of the user’s [coherent extrapolated volition (CEV)](https://en.wikipedia.org/wiki/Coherent_extrapolated_volition).
 
 ## What I’m interested in
 
-My interests are fairly eclectic: theoretical computer science, philosophy, physics, psychology, philanthropy, and the interaction between cognition and computing. Biology has influenced many computational constructions—from finite automata to neural networks and cellular automata—so I find the cognitive sciences particularly interesting.
+My interests are fairly eclectic: theoretical computer science, philosophy, physics, psychology, philanthropy, and the interaction between cognition and computing. Biology has influenced many computational constructions, from finite automata to neural networks and cellular automata, so I find the cognitive sciences particularly interesting.
 
 Outside work, I read non-fiction, learn guitar, play badminton, and spend time with our beagle. Not so long ago I used to game a lot; competitive programming later took its place. I’m also a huge fan of MOOCs as a way to get introduced to new subjects.
 
@@ -52,10 +52,6 @@ At CMI, my friends and I got interested in indoor rock climbing.
 > The curse of knowledge is a cognitive bias that occurs when someone unknowingly assumes that others have the background to understand.
 
 The phrase named the original blog. It is a common phenomenon, and recognising biases like it can help us communicate and make decisions more clearly.
-
-## Contact
-
-[Book an appointment](https://calendar.app.google/UnJvSR3Yw5Vwdpe18) or email me at **matib275 at gmail dot com**.
 
 ## Interesting blogs and links
 

@@ -4,6 +4,7 @@ import ThemeToggle from "../components/ThemeToggle.astro";
 ---
 
 <BaseLayout minimal>
+  <div class="home-theme-toggle"><ThemeToggle /></div>
   <div class="sunlight" aria-hidden="true">
     <div class="sunlight-glow"></div>
     <div class="sunlight-bounce"></div>
@@ -13,8 +14,8 @@ import ThemeToggle from "../components/ThemeToggle.astro";
     </div>
   </div>
   <section class="home">
-    <p>hi, i’m Bhishma. i’m a software engineer, and this is my small corner of the internet.</p>
-    <p>i write about systems, AI, institutions, economics, and whatever i’m trying to understand.</p>
+    <p>hi, i’m Bhishma. welcome to my small corner of the internet.</p>
+    <p>i write about systems, AI, institutions, programming, math, and whatever i’m trying to understand.</p>
     <p>i use this space to work through ideas in public.</p>
 
     <hr />
@@ -22,7 +23,7 @@ import ThemeToggle from "../components/ThemeToggle.astro";
       <a href="/writing">writings</a>
       <a href="/projects">projects</a>
       <a href="/about">about</a>
-      <ThemeToggle />
+      <a href="/contact">contact</a>
     </nav>
   </section>
 </BaseLayout>
