@@ -1,5 +1,5 @@
 ---
-title: "An über worldview"
+title: "Worldview diary"
 description: "A few computer-science-shaped mental models for attention, goals, and learning."
 date: 2019-06-22
 tags: [mental-models, learning, handwritten]
@@ -65,5 +65,3 @@ I think this is often a defence mechanism for fetching low-hanging fruit. Most i
 It helps to write down why the subject matters, move between theory and problems, ask for help when stuck, and check whether the difficulty comes from the idea or merely from how it is written.
 
 No matter how good you become at something, learning a genuinely new thing remains locally hard, confusing, and frustrating. Once you scale the summit, you get to forget the climb and enjoy the view.
-
-These notes were first written in 2019. [Read the original source on GitHub](https://github.com/bhi5hmaraj/Journal/blob/master/World-Views.md).

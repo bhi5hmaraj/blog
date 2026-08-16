@@ -22,7 +22,7 @@ draft: false
     - you cant get feedback from others
 - what do I use writing for
     - informal notes for learning new concepts
-    - organizing my thoughts to make an important decision, listing out the pros and cons and the tradeoffs involved before making a decision. this enables a few
+    - organizing my thoughts to make an important decision, listing out the pros and cons and the tradeoffs involved before making a decision.
     - convey my thought process
     - a theraputic device to let out my emotions - helps when you feel overwhelmed
 - my writing algorithm
@@ -39,10 +39,8 @@ draft: false
     - the tool should not hinder your progress or flow state
     - tool should help you collaborate without friction when needed \[trivial inconviniences\]
     - my way of writing/thinking involves using an outliner heavily (eg. workflowy, dynalist)
-- is there a difference between
-    - writing by hand and typing?
-        - there are some studies which
-    - writing vs dictating to an AI
+- [TODO] is there a difference between writing by hand and typing?
+- [TODO] writing vs dictating to an AI
 - AI x writing
     - people get an illusion of understanding when they dicsuss ideas with an LLM
     - there is a huge epidemic of people offloading their writing, thereby thinking to llms hence leading to atrophy of thinking in general. Similar to how muscles atrophies without resistance.

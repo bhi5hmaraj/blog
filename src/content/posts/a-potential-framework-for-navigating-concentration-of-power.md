@@ -2,7 +2,7 @@
 title: "A potential framework for navigating concentration of power"
 description: "A framework for preserving human agency as AI concentrates economic and political power."
 date: 2025-05-20
-tags: [ai, institutions, power, ai-governance, handwritten]
+tags: [ai, institutions, power, ai-governance, ai-assisted]
 draft: false
 ---
 

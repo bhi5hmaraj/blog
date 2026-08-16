@@ -1,9 +1,9 @@
 ---
 title: "Learning hard things is locally difficult"
 description: "Why competence in one field does not remove the friction of beginning another."
-date: 2026-08-16
+date: 2019-11-28
 tags: [learning, quick-takes, ai-assisted]
-draft: true
+draft: false
 ---
 
 Once you become good at something, it is easy to forget how much effort it took. The confusion, false starts, and long stretches of not understanding get compressed into a clean story about having always been good at it. The curse of knowledge applies to our past selves too.
