@@ -18,7 +18,7 @@ const date = post.data.date.toLocaleDateString("en-GB", {
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
-  <article>
+  <article data-entry={post.id}>
     <header class="article-header">
       <h1>{post.data.title}</h1>
       {post.data.description && <p class="subtitle">{post.data.description}</p>}

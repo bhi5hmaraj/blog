@@ -25,17 +25,17 @@ I now work on the AI engineering team at Littlebird AI, where I’m interested i
 
 ## What I’m interested in
 
-My interests are fairly eclectic: theoretical computer science, philosophy, physics, psychology, philanthropy, and the interaction between cognition and computing. Biology has influenced many computational constructions, from finite automata to neural networks and cellular automata, so I find the cognitive sciences particularly interesting.
+My interests are fairly eclectic: theoretical computer science, philosophy, physics, psychology, philanthropy, and the interaction between cognition and computing. Biology has inspired many ideas in computing, from cellular automata to neural networks, which is one reason I find cognitive science particularly interesting.
 
-Outside work, I read non-fiction, learn guitar, play badminton, and spend time with our beagle. Not so long ago I used to game a lot; competitive programming later took its place. I’m also a huge fan of MOOCs as a way to get introduced to new subjects.
+Outside work, I read nonfiction, learn guitar, play badminton, and spend time with our beagle. I used to game a lot, but competitive programming eventually took its place. I’m also a huge fan of MOOCs as a way to get introduced to new subjects.
 
 ## What this blog is about
 
 I’m not entirely sure, which is part of the point. It is a random walk through whatever currently piques my interest.
 
-One recurring thread is human cognition and its pitfalls, in the spirit of *Thinking, Fast and Slow*. That led me toward the rationality community around LessWrong and Slate Star Codex, and later toward ideas from effective altruism. My background means technical posts will appear whenever some cool topic catches my fancy.
+One recurring thread is human cognition and its pitfalls, in the spirit of *Thinking, Fast and Slow*. That led me toward the rationality community around LessWrong and Slate Star Codex, and later toward ideas from effective altruism. My background means technical posts will also show up whenever some cool topic catches my fancy.
 
-The other broad theme is human flourishing: mental health, mindfulness, physical health, and the small practical systems that make a life go better. The [writing archive](/writing/) is where these threads meet.
+The other broad theme is human flourishing: mental health, mindfulness, physical health, and the small practical systems that make life go better. The [writing archive](/writing/) is where these threads meet.
 
 ## From the old blog
 
@@ -52,14 +52,3 @@ At CMI, my friends and I got interested in indoor rock climbing.
 > The curse of knowledge is a cognitive bias that occurs when someone unknowingly assumes that others have the background to understand.
 
 The phrase named the original blog. It is a common phenomenon, and recognising biases like it can help us communicate and make decisions more clearly.
-
-## Interesting blogs and links
-
-- [Paul Graham’s essays](https://paulgraham.com/articles.html)
-- [Wait But Why](https://waitbutwhy.com/)
-- [Shtetl-Optimized](https://www.scottaaronson.com/blog/)
-- [SMBC](https://www.smbc-comics.com/)
-- [LessWrong](https://www.lesswrong.com/)
-- [xkcd](https://xkcd.com/)
-- [Overcoming Bias](https://www.overcomingbias.com/)
-- [My Goodreads shelf](https://www.goodreads.com/review/list/14350960-bhishmaraj?shelf=currently-reading)

@@ -13,6 +13,7 @@ If you’d like to talk, [book an appointment](https://calendar.app.google/UnJvS
 - [X / Twitter](https://x.com/bhi5hmaraj)
 - [GitHub](https://github.com/bhi5hmaraj)
 - [Telegram](https://t.me/alpenglow11)
+- [YouTube](https://www.youtube.com/@bhi5hmaraj)
 
 ## Why I mostly avoid social media
 
@@ -21,10 +22,3 @@ I avoid most social media for personal use because it asks us to give up too muc
 I’m not against using these platforms for business. For personal use, though, I would caution people to think twice about whether the convenience is worth surrendering that much control.
 
 X is my exception. I use it less as conventional social media and more as a discussion group and public town hall: a place to curate who I hear from, understand the zeitgeist, and follow the latest progress in my field.
-
-## Recent posts on X
-
-<div>
-  <a class="twitter-timeline" href="https://x.com/bhi5hmaraj?ref_src=twsrc%5Etfw">Posts by bhi5hmaraj</a>
-  <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
-</div>

@@ -12,9 +12,9 @@ Its very funny to see the overton window shift since 2020 when only some nerds a
 
 The best working definition that I can work with, is the one by Shane Legg and Hutter -
 
-"intelligence measures an agent's ability to achieve goals in a wide range of environments"
+"intelligence measures an agent's ability to achieve goals in a wide range of environments"<sup class="sidenote-number"><a href="#note-intelligence-definitions" aria-label="Sidenote 1">1</a></sup>
 
-you can find a few more over at their [article](https://papers.ssrn.com/sol3/Delivery.cfm/5199822.pdf?abstractid=5199822&mirid=1)
+<aside class="sidenote" id="note-intelligence-definitions"><strong>1.</strong> Legg and Hutter survey several additional definitions in their <a href="https://papers.ssrn.com/sol3/Delivery.cfm/5199822.pdf?abstractid=5199822&mirid=1">article</a>.</aside>
 
 I liked this version for its balance of simplicity and derivability.
 

@@ -37,7 +37,9 @@ What we are trying to do here is for every index $i$ from  $n$ to $1$ . We can e
 
 Naively implementing the reccurencce would result in a complexity of $\mathcal{O}(k * n^2)$ . But this would easily TLE.
 
-The main bottleneck here is the summation for every index. If we can come up with a data structure which supports fast querying of sum less than a value and also updates at an index. This is exactly what [Fenwick Tress](https://brilliant.org/wiki/fenwick-tree/) are for. Both the operations can be performed in $\mathcal{O}(\log n)$ .
+The main bottleneck here is the summation for every index. If we can come up with a data structure which supports fast querying of sum less than a value and also updates at an index. This is exactly what [Fenwick trees](https://brilliant.org/wiki/fenwick-tree/) are for.<sup class="sidenote-number"><a href="#note-fenwick" aria-label="Sidenote 1">1</a></sup> Both the operations can be performed in $\mathcal{O}(\log n)$ .
+
+<aside class="sidenote" id="note-fenwick"><strong>1.</strong> Further intuition: <a href="https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a">Stack Exchange</a> and <a href="https://visualgo.net/bn/fenwicktree">VisuAlgo</a>.</aside>
 
 ```java
 int DP[] = new int[n + 1];  /* DP_k[j] := number of subsequences of length k with starting element as j */
@@ -61,8 +63,6 @@ for(int i = 1; i <= n; i++)
 The overall complexity now becomes $\mathcal{O}(k\cdot n \log n)$
 
 You can find my solution [here](https://gist.github.com/bhi5hmaraj/325b198fb11d8735b802996e6f8c37f6)
-
-More resources for Fenwick tree - [stackexchange](https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a) , [visualgo](https://visualgo.net/bn/fenwicktree)
 
 
 ## Day 2 (3/7/18)

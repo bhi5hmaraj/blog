@@ -6,15 +6,16 @@ tags:
   - handwritten
 draft: false
 ---
+
 ## My views on CS
 
 What others have said before
 
->  Computer science] is not really about computers -- and it's not  about computers in the same sense that physics is not really about  particle accelerators, and biology is not about microscopes and Petri dishes...and geometry isn't really about using surveying instruments. Now the reason that we think computer  science is about computers is pretty much the same reason that the  Egyptians thought geometry was about surveying instruments: when some  field is just getting started and you don't really understand it very  well, it's very easy to confuse the essence of what you're doing with  the tools that you use."
+> Computer science is not really about computers -- and it's not about computers in the same sense that physics is not really about particle accelerators, and biology is not about microscopes and Petri dishes...and geometry isn't really about using surveying instruments. Now the reason that we think computer science is about computers is pretty much the same reason that the Egyptians thought geometry was about surveying instruments: when some field is just getting started and you don't really understand it very well, it's very easy to confuse the essence of what you're doing with the tools that you use."
 >
-> [Hal Abelson](https://en.wikiquote.org/wiki/Hal_Abelson) (1986) Introduction of video of lectures on the *Structure and Interpretation of Computer Programs* ([source](http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/)).
->
-> [https://en.wikiquote.org/wiki/Computer_science](https://en.wikiquote.org/wiki/Computer_science)
+> <sup class="sidenote-number"><a href="#note-abelson" aria-label="Sidenote 1">1</a></sup>
+
+<aside class="sidenote" id="note-abelson"><strong>1.</strong> Hal Abelson, introducing the 1986 <em>Structure and Interpretation of Computer Programs</em> lectures. <a href="http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/">Source</a>.</aside>
 
 I'm writing this article to consolidate my ideas and views about this amazing field of computer science which I happen to work on. The main purpose of this essay is 2 fold -
 

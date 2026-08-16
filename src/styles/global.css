@@ -396,6 +396,7 @@ td { padding: .55rem .7rem; border: 1px solid var(--line); text-align: left; ver
 figure { margin: 2.5rem 0; }
 figure img { display: block; max-width: 100%; height: auto; }
 .article-body img { max-width: 100%; height: auto; }
+[data-entry="superposition"] .article-body img { display: block; width: min(100%, 40rem); margin-inline: auto; }
 figcaption { margin-top: .5rem; color: var(--muted); font-size: .84rem; line-height: 1.4; }
 .figure-wide,
 .figure-full { position: relative; left: 50%; width: min(54rem, calc(100vw - 2rem)); transform: translateX(-50%); }
