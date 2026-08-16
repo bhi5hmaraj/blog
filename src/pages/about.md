@@ -53,6 +53,10 @@ At CMI, my friends and I got interested in indoor rock climbing.
 
 The phrase named the original blog. It is a common phenomenon, and recognising biases like it can help us communicate and make decisions more clearly.
 
+## Contact
+
+[Book an appointment](https://calendar.app.google/UnJvSR3Yw5Vwdpe18) or email me at **matib275 at gmail dot com**.
+
 ## Interesting blogs and links
 
 - [Paul Graham’s essays](https://paulgraham.com/articles.html)

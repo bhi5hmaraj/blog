@@ -275,6 +275,9 @@ article {
 .writing-index a { display: flex; justify-content: space-between; gap: .75rem; padding-block: .22rem; font-family: "Caveat Variable", cursive; font-size: 1.18rem; }
 .writing-index a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 .writing-index span { color: var(--muted); }
+.archive-group { scroll-margin-top: 2rem; }
+.archive-group + .archive-group { margin-top: 2.5rem; }
+.archive-group > h2 { margin: 0 0 .5rem; font-size: 1.55rem; }
 
 .projects-page { width: min(100%, 68rem); }
 .project-filters { flex-wrap: wrap; margin: 2rem 0 1.5rem; gap: .45rem 1rem; }

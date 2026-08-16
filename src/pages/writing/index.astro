@@ -12,6 +12,7 @@ const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().s
     key,
     label: archivePosts[0].data.date.toLocaleDateString("en-GB", { month: "long", year: "numeric" }),
     count: archivePosts.length,
+    posts: archivePosts,
   }));
 ---
 
@@ -24,7 +25,7 @@ const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().s
         <h2>Archives</h2>
         <ul>
           {archives.map(({ key, label, count }) => (
-            <li><a href={`/writing/?archive=${key}`} data-archive={key}>{label} ({count})</a></li>
+            <li><a href={`#archive-${key}`}>{label} ({count})</a></li>
           ))}
         </ul>
         <h2>Tags</h2>
@@ -37,7 +38,12 @@ const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().s
       </aside>
       <div>
         <p class="filtered-heading" data-filter-heading hidden></p>
-        <PostList posts={posts} />
+        {archives.map(({ key, label, posts: archivePosts }) => (
+          <section class="archive-group" id={`archive-${key}`}>
+            <h2>{label}</h2>
+            <PostList posts={archivePosts} />
+          </section>
+        ))}
       </div>
     </div>
   </section>
@@ -47,27 +53,25 @@ const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().s
   (() => {
     const params = new URLSearchParams(location.search);
     const tag = params.get("tag");
-    const archive = params.get("archive");
-    if (!tag && !archive) return;
+    if (!tag) return;
 
     document.querySelectorAll("[data-post-tags]").forEach((item) => {
       if (!(item instanceof HTMLElement)) return;
-      const matchesTag = !tag || JSON.parse(item.dataset.postTags || "[]").includes(tag);
-      const matchesArchive = !archive || item.dataset.postArchive === archive;
-      item.hidden = !matchesTag || !matchesArchive;
+      item.hidden = !JSON.parse(item.dataset.postTags || "[]").includes(tag);
     });
 
-    const archiveLink = [...document.querySelectorAll("[data-archive]")]
-      .find((link) => link.getAttribute("data-archive") === archive);
+    document.querySelectorAll(".archive-group").forEach((group) => {
+      if (group instanceof HTMLElement) group.hidden = !group.querySelector("[data-post-tags]:not([hidden])");
+    });
+
     const heading = document.querySelector("[data-filter-heading]");
     if (heading instanceof HTMLElement) {
-      heading.textContent = tag ? `Tagged “${tag}”` : archiveLink?.textContent || "Archive";
+      heading.textContent = `Tagged “${tag}”`;
       heading.hidden = false;
     }
 
     document.querySelectorAll("[data-tag]").forEach((link) => {
       if (link.getAttribute("data-tag") === tag) link.setAttribute("aria-current", "page");
     });
-    archiveLink?.setAttribute("aria-current", "page");
   })();
 </script>
