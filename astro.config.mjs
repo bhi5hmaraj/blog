@@ -8,7 +8,11 @@ export default defineConfig({
     layout: "constrained",
   },
   markdown: {
-    syntaxHighlight: false,
+    syntaxHighlight: "shiki",
+    shikiConfig: {
+      themes: { light: "github-light", dark: "github-dark" },
+      defaultColor: "light",
+    },
     processor: unified({
       remarkPlugins: [remarkMath],
       rehypePlugins: [rehypeKatex],

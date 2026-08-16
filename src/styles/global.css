@@ -362,9 +362,17 @@ pre {
   overflow-x: auto;
   padding: 1rem;
   background: var(--paper-soft);
+  color: var(--ink);
   border: 1px solid var(--line);
   font-size: .82rem;
   line-height: 1.5;
+}
+
+.article-body pre {
+  position: relative;
+  left: 50%;
+  width: min(68rem, calc(100vw - 2rem));
+  transform: translateX(-50%);
 }
 
 code,
@@ -416,6 +424,8 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="dark"] .sunlight { opacity: 0; }
+html[data-theme="dark"] pre.astro-code { background-color: var(--shiki-dark-bg) !important; color: var(--shiki-dark) !important; }
+html[data-theme="dark"] pre.astro-code span { color: var(--shiki-dark) !important; }
 html[data-theme="dark"] .ai-badge { border-color: #607b5f; background: #263226; color: #b5d0ad; }
 html[data-theme="dark"] .sunlight-scene {
   opacity: .3;
