@@ -12,7 +12,13 @@ I’m a huge fan of Paul Graham’s idea of [keeping identities small](https://p
 
 ## What I do
 
-I work on the AI engineering team at [Littlebird AI](https://littlebird.ai/), where I’m interested in building systems that treat the user as the principal, closer to [Gwern’s idea of a “guardian angel”](https://gwern.net/guardian-angel), and act in service of the user’s [coherent extrapolated volition (CEV)](https://en.wikipedia.org/wiki/Coherent_extrapolated_volition).
+I work on the AI engineering team at [Littlebird AI](https://littlebird.ai/), where I’m interested in building systems that treat the user as the principal, closer to [Gwern’s idea of a “guardian angel”](https://gwern.net/guardian-angel) and Forethought’s [angels-on-the-shoulder](https://www.forethought.org/research/design-sketches-angels-on-the-shoulder), and act in service of the user’s [coherent extrapolated volition (CEV)](https://en.wikipedia.org/wiki/Coherent_extrapolated_volition).<sup class="sidenote-number"><a href="#note-ai-delegates" aria-label="Sidenote 1">1</a></sup>
+
+<aside class="sidenote" id="note-ai-delegates"><strong>1.</strong> A related sketch proposes <a href="https://www.forethought.org/research/design-sketches-defense-favoured-coordination-tech#ai-delegates-and-preference-elicitation">AI delegates and preference elicitation</a>: systems that represent a human principal while returning to them when preferences are unclear or a decision is important.</aside>
+
+### Strategic awareness
+
+I’m also interested in [tools for strategic awareness](https://www.forethought.org/research/design-sketches-tools-for-strategic-awareness): forecasting, scenario planning, and making coordination failures easier to see. [Simulacra](/projects/simulacra/) is my experiment on the scenario-planning side, using an AI-driven tabletop exercise to make crisis decisions and coordination failures experiential.
 
 ## Where I’ve been
 
@@ -37,7 +43,7 @@ I’m not entirely sure, which is part of the point. It is a random walk through
 
 One recurring thread is human cognition and its pitfalls, in the spirit of *Thinking, Fast and Slow*. That led me toward the rationality community around LessWrong and Slate Star Codex, and later toward ideas from effective altruism. My background means technical posts will also show up whenever some cool topic catches my fancy.
 
-The other broad theme is human flourishing: mental health, mindfulness, physical health, and the small practical systems that make life go better. The [writing archive](/writing/) is where these threads meet.
+The other broad theme is human flourishing: mental health, mindfulness, physical health, and the small practical systems that make life go better. Check out my [writing archive](/writing/) to know more about this.
 
 ## From the old blog
 
