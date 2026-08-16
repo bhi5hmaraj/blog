@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+---
+
+<BaseLayout minimal>
+  <div class="sunlight" aria-hidden="true">
+    <div class="sunlight-glow"></div>
+    <div class="sunlight-bounce"></div>
+    <div class="sunlight-beam"></div>
+    <div class="sunlight-scene">
+      <div class="sunlight-window"></div>
+    </div>
+  </div>
+  <section class="home">
+    <p>hi, i’m Bhishma. i’m a software engineer, and this is my small corner of the internet.</p>
+    <p>i write about systems, AI, institutions, economics, and whatever i’m trying to understand.</p>
+    <p>this is a quiet place for arguments, diagrams, footnotes, and ideas still taking shape.</p>
+
+    <hr />
+    <nav class="home-links" aria-label="Explore the site">
+      <a href="/writing">writings</a>
+      <a href="/about">about</a>
+      <ThemeToggle />
+    </nav>
+  </section>
+</BaseLayout>

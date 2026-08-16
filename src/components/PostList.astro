@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  posts: CollectionEntry<"posts">[];
+}
+
+const { posts } = Astro.props;
+const formatDate = (date: Date) =>
+  date.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+---
+
+<ol class="post-list">
+  {
+    posts.map((post) => (
+      <li data-post-tags={JSON.stringify(post.data.tags)}>
+        <a href={`/writing/${post.id}/`}>{post.data.title}</a>
+        <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+        {post.data.tags.length > 0 && (
+          <ul class="post-tags" aria-label="Tags">
+            {post.data.tags.map((tag) => (
+              <li><a href={`/writing/?tag=${encodeURIComponent(tag)}`}>{tag}</a></li>
+            ))}
+          </ul>
+        )}
+        {post.data.description && <p>{post.data.description}</p>}
+      </li>
+    ))
+  }
+</ol>

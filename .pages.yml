@@ -1,0 +1,42 @@
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: src/content/posts
+    filename: "{year}-{month}-{day}-{title}.md"
+    view:
+      fields: [title, date, draft]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
+      - name: body
+        label: Body
+        type: rich-text
+        options:
+          format: markdown

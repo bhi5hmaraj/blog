@@ -1,17 +1,21 @@
-# Bhishmaraj's blog
+# Bhishma Raj’s blog
 
-My personal blog where I share my thoughts and use it as a journal to update on things I'm currently working on.
+A quiet, typographic personal blog built with Astro and edited through Pages CMS.
 
-This blog is powered by [Jekyll](https://jekyllrb.com/). 
+The landing-page light treatment is inspired by [Sunlit](https://github.com/jackyzha0/sunlit), recreated without its unlicensed source or stock image asset.
 
-### Acks
+```sh
+npm install
+npm run dev
+```
 
-1. [Manvendra Singh](https://github.com/manu-chroma) - For spending sleepless nights in helping me setup Jekkyl fixing other web dev issues
-2. [bdewilde](https://github.com/bdewilde/bdewilde.github.io) and [galenlin](https://github.com/galenlin/galenlin.github.io) for lending me their Jekyll themes
+Published posts live in `src/content/posts` with `draft: false`. Vercel deploys `main`; GitHub Actions validates every change.
 
+Markdown footnotes and math work normally. For a captioned or wider image, use native HTML:
 
-
-
-
-
-
+```html
+<figure class="figure-wide">
+  <img src="/images/example.png" alt="Meaningful description" />
+  <figcaption>What the figure shows.</figcaption>
+</figure>
+```

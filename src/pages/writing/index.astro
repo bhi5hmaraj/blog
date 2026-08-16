@@ -1,0 +1,53 @@
+---
+import PostList from "../../components/PostList.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPublishedPosts } from "../../lib/posts";
+
+const posts = await getPublishedPosts();
+const tags = [...new Set(posts.flatMap((post) => post.data.tags))]
+  .map((tag) => ({ tag, count: posts.filter((post) => post.data.tags.includes(tag)).length }))
+  .sort((a, b) => a.tag.localeCompare(b.tag));
+---
+
+<BaseLayout title="Writing" description="Essays and notes by Bhishma Raj.">
+  <section class="page listing writing-page">
+    <h1>Writing</h1>
+    <p class="page-intro">Essays, explanations, and things I’m trying to understand.</p>
+    <div class="writing-grid">
+      <div>
+        <p class="filtered-heading" data-filter-heading hidden></p>
+        <PostList posts={posts} />
+      </div>
+      <aside class="tag-index" aria-label="Browse writing by tag">
+        <h2>Tags</h2>
+        <ul>
+          <li><a href="/writing/">all <span>{posts.length}</span></a></li>
+          {tags.map(({ tag, count }) => (
+            <li><a href={`/writing/?tag=${encodeURIComponent(tag)}`} data-tag={tag}>{tag} <span>{count}</span></a></li>
+          ))}
+        </ul>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    const tag = new URLSearchParams(location.search).get("tag");
+    if (!tag) return;
+
+    document.querySelectorAll("[data-post-tags]").forEach((item) => {
+      if (item instanceof HTMLElement) item.hidden = !JSON.parse(item.dataset.postTags || "[]").includes(tag);
+    });
+
+    const heading = document.querySelector("[data-filter-heading]");
+    if (heading instanceof HTMLElement) {
+      heading.textContent = `Tagged “${tag}”`;
+      heading.hidden = false;
+    }
+
+    document.querySelectorAll("[data-tag]").forEach((link) => {
+      if (link.getAttribute("data-tag") === tag) link.setAttribute("aria-current", "page");
+    });
+  })();
+</script>

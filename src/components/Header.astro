@@ -1,0 +1,22 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+
+const links = [
+  ["/writing", "Writing"],
+  ["/about", "About"],
+];
+---
+
+<header class="site-header">
+  <a class="site-name" href="/">Bhishma Raj</a>
+  <nav aria-label="Main navigation">
+    {
+      links.map(([href, label]) => (
+        <a href={href} aria-current={Astro.url.pathname.startsWith(href) ? "page" : undefined}>
+          {label}
+        </a>
+      ))
+    }
+    <ThemeToggle />
+  </nav>
+</header>

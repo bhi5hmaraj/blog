@@ -1,0 +1,23 @@
+<section class="comments-note" aria-labelledby="comments-title">
+  <h2 id="comments-title">Comments</h2>
+  <p>
+    Select text on desktop, or long-press text on mobile, then choose Annotate in Hypothesis. Sign in if prompted.
+  </p>
+</section>
+
+<script is:inline>
+  (() => {
+    window.hypothesisConfig = () => ({ openSidebar: false, showHighlights: true });
+    if (window.__hypothesisLoaded) return;
+
+    window.__hypothesisLoaded = true;
+    const script = document.createElement("script");
+    script.src = "https://hypothes.is/embed.js";
+    script.async = true;
+    script.addEventListener("error", () => {
+      window.__hypothesisLoaded = false;
+      console.warn("Hypothesis comments could not be loaded.");
+    });
+    document.body.appendChild(script);
+  })();
+</script>
