@@ -1,7 +1,7 @@
 ---
 title: "A New Beginning"
 date: 2019-11-21
-tags: [social-media]
+tags: [social-media, handwritten]
 draft: true
 ---
 
@@ -13,6 +13,6 @@ I just don't understand what took me so long to understand this. Social media ha
 
 
 Faceook ad inferences (https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen) -> Your Information -> Your categories
- 
-Counter arguments 
-Confirmation Bias - Maybe, but I guess (quote Finch from Person of Interest) only  the paranoid will survive the next decade. 
+
+Counter arguments
+Confirmation Bias - Maybe, but I guess (quote Finch from Person of Interest) only  the paranoid will survive the next decade.

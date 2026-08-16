@@ -4,10 +4,11 @@ import BaseLayout from "./BaseLayout.astro";
 import HypothesisComments from "../components/HypothesisComments.astro";
 
 interface Props {
-  post: CollectionEntry<"posts">;
+  post: CollectionEntry<"posts"> | CollectionEntry<"projects">;
+  basePath?: "writing" | "projects";
 }
 
-const { post } = Astro.props;
+const { post, basePath = "writing" } = Astro.props;
 const { Content } = await render(post);
 const date = post.data.date.toLocaleDateString("en-GB", {
   day: "numeric",
@@ -23,7 +24,7 @@ const date = post.data.date.toLocaleDateString("en-GB", {
       {post.data.description && <p class="subtitle">{post.data.description}</p>}
       <div class="metadata">
         <time datetime={post.data.date.toISOString()}>{date}</time>
-        {post.data.tags.map((tag) => <span><a href={`/writing/?tag=${encodeURIComponent(tag)}`}>{tag}</a></span>)}
+        {post.data.tags.map((tag) => <span><a class:list={{ "ai-badge": tag === "handwritten" || tag === "ai-assisted" }} href={`/${basePath}/?tag=${encodeURIComponent(tag)}`}>{tag}</a></span>)}
       </div>
     </header>
     <div class="article-body">

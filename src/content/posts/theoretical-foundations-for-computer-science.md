@@ -2,10 +2,10 @@
 title: "Theoretical Foundations for Computer Science"
 description: "Course notes on graph theory and combinatorics."
 date: 2018-09-13
-tags: [theoretical-computer-science, course-notes]
+tags: [theoretical-computer-science, course-notes, handwritten]
 draft: true
 ---
- 
+
 > The goal of the course is to brush up and build basic concepts and background required for other theoretical courses, with an emphasis on writing clear, precise proofs of mathematical statements. There are four modules: Graph theory, Combinatorics, Algebra, Probability with some possible overlap of topics across modules.
 
 From the offical course [website](https://www.cmi.ac.in/~prajakta/courses/f2018/index.html)

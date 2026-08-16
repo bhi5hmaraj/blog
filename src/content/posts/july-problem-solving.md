@@ -2,7 +2,7 @@
 title: "July problem solving"
 description: "A running log of competitive-programming problems and explanations from July 2018."
 date: 2018-07-01
-tags: [competitive-programming, timus, explanation]
+tags: [competitive-programming, explanation, handwritten]
 draft: false
 ---
 
@@ -21,9 +21,9 @@ Pre requisite - DP, Fenwick tree
 
 
 
-This looks like a classic DP problem. If you are familiar with the LIS (Longest increasing subsequence) problem then the problem is essentially solved. 
+This looks like a classic DP problem. If you are familiar with the LIS (Longest increasing subsequence) problem then the problem is essentially solved.
 
-Let the DP state be 
+Let the DP state be
 
 $$ DP_k[val] \;-\; \text{number of subsequences of length } k \text{ starting with } val $$
 
@@ -40,8 +40,8 @@ Naively implementing the reccurencce would result in a complexity of $\mathcal{O
 The main bottleneck here is the summation for every index. If we can come up with a data structure which supports fast querying of sum less than a value and also updates at an index. This is exactly what [Fenwick Tress](https://brilliant.org/wiki/fenwick-tree/) are for. Both the operations can be performed in $\mathcal{O}(\log n)$ .
 
 ```java
-int DP[] = new int[n + 1];  /* DP_k[j] := number of subsequences of length k with starting element as j */        
-Arrays.fill(DP, 1);        // Base case is subsequence of length 1 and every element satisfies that 
+int DP[] = new int[n + 1];  /* DP_k[j] := number of subsequences of length k with starting element as j */
+Arrays.fill(DP, 1);        // Base case is subsequence of length 1 and every element satisfies that
 
 while(k-->0) {
   FenwickTree BIT = new FenwickTree(n);
@@ -53,7 +53,7 @@ while(k-->0) {
 }
 
 int totalWays = 0;
-for(int i = 1; i <= n; i++) 
+for(int i = 1; i <= n; i++)
   totalWays = (totalWays + DP[i]) % MOD;
 
 ```
@@ -69,7 +69,7 @@ More resources for Fenwick tree - [stackexchange](https://cs.stackexchange.com/q
 
 I took part in a Div3 contest ([#494](https://codeforces.com/contest/1003)) in CF. A and C were quite easy. B was a ad-hoc with a tricky edge case. D was my nemesis, greedy.
 
-#### [A - Polycarp's Pockets](https://codeforces.com/contest/1003/problem/A) | [Solution](https://codeforces.com/contest/1003/submission/39897712)  
+#### [A - Polycarp's Pockets](https://codeforces.com/contest/1003/problem/A) | [Solution](https://codeforces.com/contest/1003/submission/39897712)
 
 Since we need to pack a set which contains different items all the time, we can create a frequency distribution of all the items and then remove items based on it. So the answer would be the maximum frequency.
 
@@ -87,19 +87,16 @@ println(freq.values().stream().max(Integer::compare).get());
 There are 2 observations here
 
 1. Its better to start with the character with the maximum frequency. This is because of the fact that starting with the character with smaller frequency can make the solution infeasible. For example if `a = 1 b = 2 x = 2` then `101` is the only feasible solution. So starting with a character with highest frequency guarantees a solution.
-2. Combining the characters together won't change the score. 
+2. Combining the characters together won't change the score.
 
 From these 2 observations we can do the following -
 
 1. Start with the character with the maximum frequency
-2. Alternate characters till we get a score of `x` 
+2. Alternate characters till we get a score of `x`
 3. Club the remaining characters with their first occurrence (we can group it with any arbitrary position of that character.
 
 #### [C - Intense Heat](https://codeforces.com/contest/1003/problem/C) | [Solution](https://codeforces.com/contest/1003/submission/39906854)
 
-The constraints of the problem are not so high $n,k \leq 5000$ , hence any $\mathcal{O}(n \cdot k)$ should work. I coded a sliding window type of solution. 
+The constraints of the problem are not so high $n,k \leq 5000$ , hence any $\mathcal{O}(n \cdot k)$ should work. I coded a sliding window type of solution.
 
-Now coming to the interesting part of the problem, looks like there is a [$\mathcal{O}(n)$](https://codeforces.com/blog/entry/60377?#comment-442444) solution to this problem using a [nice trick](https://codeforces.com/contest/1003/submission/39957991) 
-
-
-
+Now coming to the interesting part of the problem, looks like there is a [$\mathcal{O}(n)$](https://codeforces.com/blog/entry/60377?#comment-442444) solution to this problem using a [nice trick](https://codeforces.com/contest/1003/submission/39957991)

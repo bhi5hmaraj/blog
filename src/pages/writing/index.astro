@@ -7,6 +7,12 @@ const posts = await getPublishedPosts();
 const tags = [...new Set(posts.flatMap((post) => post.data.tags))]
   .map((tag) => ({ tag, count: posts.filter((post) => post.data.tags.includes(tag)).length }))
   .sort((a, b) => a.tag.localeCompare(b.tag));
+const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().slice(0, 7))]
+  .map(([key, archivePosts]) => ({
+    key,
+    label: archivePosts[0].data.date.toLocaleDateString("en-GB", { month: "long", year: "numeric" }),
+    count: archivePosts.length,
+  }));
 ---
 
 <BaseLayout title="Writing" description="Essays and notes by Bhishma Raj.">
@@ -14,11 +20,13 @@ const tags = [...new Set(posts.flatMap((post) => post.data.tags))]
     <h1>Writing</h1>
     <p class="page-intro">Essays, explanations, and things I’m trying to understand.</p>
     <div class="writing-grid">
-      <div>
-        <p class="filtered-heading" data-filter-heading hidden></p>
-        <PostList posts={posts} />
-      </div>
-      <aside class="tag-index" aria-label="Browse writing by tag">
+      <aside class="writing-index" aria-label="Browse writing">
+        <h2>Archives</h2>
+        <ul>
+          {archives.map(({ key, label, count }) => (
+            <li><a href={`/writing/?archive=${key}`} data-archive={key}>{label} ({count})</a></li>
+          ))}
+        </ul>
         <h2>Tags</h2>
         <ul>
           <li><a href="/writing/">all <span>{posts.length}</span></a></li>
@@ -27,27 +35,39 @@ const tags = [...new Set(posts.flatMap((post) => post.data.tags))]
           ))}
         </ul>
       </aside>
+      <div>
+        <p class="filtered-heading" data-filter-heading hidden></p>
+        <PostList posts={posts} />
+      </div>
     </div>
   </section>
 </BaseLayout>
 
 <script is:inline>
   (() => {
-    const tag = new URLSearchParams(location.search).get("tag");
-    if (!tag) return;
+    const params = new URLSearchParams(location.search);
+    const tag = params.get("tag");
+    const archive = params.get("archive");
+    if (!tag && !archive) return;
 
     document.querySelectorAll("[data-post-tags]").forEach((item) => {
-      if (item instanceof HTMLElement) item.hidden = !JSON.parse(item.dataset.postTags || "[]").includes(tag);
+      if (!(item instanceof HTMLElement)) return;
+      const matchesTag = !tag || JSON.parse(item.dataset.postTags || "[]").includes(tag);
+      const matchesArchive = !archive || item.dataset.postArchive === archive;
+      item.hidden = !matchesTag || !matchesArchive;
     });
 
+    const archiveLink = [...document.querySelectorAll("[data-archive]")]
+      .find((link) => link.getAttribute("data-archive") === archive);
     const heading = document.querySelector("[data-filter-heading]");
     if (heading instanceof HTMLElement) {
-      heading.textContent = `Tagged “${tag}”`;
+      heading.textContent = tag ? `Tagged “${tag}”` : archiveLink?.textContent || "Archive";
       heading.hidden = false;
     }
 
     document.querySelectorAll("[data-tag]").forEach((link) => {
       if (link.getAttribute("data-tag") === tag) link.setAttribute("aria-current", "page");
     });
+    archiveLink?.setAttribute("aria-current", "page");
   })();
 </script>

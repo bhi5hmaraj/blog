@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPublishedProjects } from "../../lib/projects";
+
+const projects = await getPublishedProjects();
+const tags = [...new Set(projects.flatMap((project) => project.data.tags))].sort();
+const formatDate = (date: Date) =>
+  date.toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+---
+
+<BaseLayout title="Projects" description="Projects by Bhishma Raj.">
+  <section class="page projects-page">
+    <h1>Projects</h1>
+    <p class="page-intro">Things I’ve built, tested, and am still figuring out.</p>
+
+    <nav class="project-filters" aria-label="Filter projects">
+      <a href="/projects/">all</a>
+      {tags.map((tag) => <a href={`/projects/?tag=${encodeURIComponent(tag)}`} data-tag={tag}>{tag}</a>)}
+    </nav>
+
+    <ol class="project-grid">
+      {projects.map((project) => (
+        <li data-project-tags={JSON.stringify(project.data.tags)}>
+          <article class="project-card">
+            <time datetime={project.data.date.toISOString()}>{formatDate(project.data.date)}</time>
+            <h2><a href={`/projects/${project.id}/`}>{project.data.title}</a></h2>
+            <p>{project.data.description ?? "Details forthcoming."}</p>
+            {project.data.tags.length > 0 && (
+              <ul class="post-tags" aria-label="Tags">
+                {project.data.tags.map((tag) => (
+                  <li><a class:list={{ "ai-badge": tag === "ai-assisted" }} href={`/projects/?tag=${encodeURIComponent(tag)}`}>{tag}</a></li>
+                ))}
+              </ul>
+            )}
+          </article>
+        </li>
+      ))}
+    </ol>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    const tag = new URLSearchParams(location.search).get("tag");
+    if (!tag) return;
+    document.querySelectorAll("[data-project-tags]").forEach((item) => {
+      if (item instanceof HTMLElement) item.hidden = !JSON.parse(item.dataset.projectTags || "[]").includes(tag);
+    });
+    document.querySelector(`[data-tag="${CSS.escape(tag)}"]`)?.setAttribute("aria-current", "page");
+  })();
+</script>

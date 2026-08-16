@@ -2,10 +2,11 @@
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  posts: CollectionEntry<"posts">[];
+  posts: (CollectionEntry<"posts"> | CollectionEntry<"projects">)[];
+  basePath?: "writing" | "projects";
 }
 
-const { posts } = Astro.props;
+const { posts, basePath = "writing" } = Astro.props;
 const formatDate = (date: Date) =>
   date.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 ---
@@ -13,13 +14,13 @@ const formatDate = (date: Date) =>
 <ol class="post-list">
   {
     posts.map((post) => (
-      <li data-post-tags={JSON.stringify(post.data.tags)}>
-        <a href={`/writing/${post.id}/`}>{post.data.title}</a>
+      <li data-post-tags={JSON.stringify(post.data.tags)} data-post-archive={post.data.date.toISOString().slice(0, 7)}>
+        <a href={`/${basePath}/${post.id}/`}>{post.data.title}</a>
         <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
         {post.data.tags.length > 0 && (
           <ul class="post-tags" aria-label="Tags">
             {post.data.tags.map((tag) => (
-              <li><a href={`/writing/?tag=${encodeURIComponent(tag)}`}>{tag}</a></li>
+              <li><a class:list={{ "ai-badge": tag === "handwritten" || tag === "ai-assisted" }} href={`/${basePath}/?tag=${encodeURIComponent(tag)}`}>{tag}</a></li>
             ))}
           </ul>
         )}

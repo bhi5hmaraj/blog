@@ -2,11 +2,11 @@
 title: "Learning in the internet age"
 description: "A guide to the educational resources that made learning on the internet transformative."
 date: 2018-07-01
-tags: [resources, awesome-list, learning]
+tags: [resources, awesome-list, learning, handwritten]
 draft: false
 ---
 
-The internet has [sparked](https://youtu.be/N4mdV1CIpvI?t=14m20s) one of the largest changes to education. People have [completed an entire MIT Computer Science curriculum](https://www.scotthyoung.com/blog/myprojects/mit-challenge-2/) in a span of a year. Things which would sound ridiculous a couple of decades ago are now so mainstream. But I feel that there hasn't been much awareness about the wealth of educational content that's out there mostly free in the internet. Though most of the resources here are written from the perspective of a computer science student, I'm sure that people with other interests will also find something engaging. 
+The internet has [sparked](https://youtu.be/N4mdV1CIpvI?t=14m20s) one of the largest changes to education. People have [completed an entire MIT Computer Science curriculum](https://www.scotthyoung.com/blog/myprojects/mit-challenge-2/) in a span of a year. Things which would sound ridiculous a couple of decades ago are now so mainstream. But I feel that there hasn't been much awareness about the wealth of educational content that's out there mostly free in the internet. Though most of the resources here are written from the perspective of a computer science student, I'm sure that people with other interests will also find something engaging.
 
 ## Procrastination and Good introduction
 
@@ -16,7 +16,7 @@ Lets start with a good [xkcd](https://www.xkcd.com/731/) comic
 
 
 
-These websites/channels are mostly pop-sci types. They are a good source of inspiration and provide interesting questions to ponder upon. For example the YouTube channels vsause and veritasium were very influential in sustaining my curiosity in physics during school days. 
+These websites/channels are mostly pop-sci types. They are a good source of inspiration and provide interesting questions to ponder upon. For example the YouTube channels vsause and veritasium were very influential in sustaining my curiosity in physics during school days.
 
 | Resource                                                     | Topics                       | Notes                                                        |
 | ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ |
@@ -30,9 +30,9 @@ These websites/channels are mostly pop-sci types. They are a good source of insp
 | [Minute Physics](https://www.youtube.com/user/minutephysics) | Physics                      | Short videos which concentrate mainly on physics. They go beyond the standard text book stuff and ask very interesting questions like [why is the solar system flat](https://www.youtube.com/watch?v=tmNXKqeUtJM) |
 | TED talks                                                    | Mixed                        | Keynote type talks which are mostly given by academics to popularize their work. Their talks are known for their [contrarian](https://www.wired.com/2013/04/tedtalk/) stance. |
 
-## Active Learning 
+## Active Learning
 
-The above resources are good to get started/interested to a topic but the real learning happens only when we get our hands dirty. The [wiki](https://en.wikipedia.org/wiki/Active_learning) article has good amount of information regarding this topic. This is one of the places where traditional educational systems have a leg up. Even though we can stream all the content. It's very hard to emulate the active learning which happens at schools/universities.  Clarification of doubts and peer to peer interaction are very vital . Nonetheless, if you are persistent and determined you can try these websites.  
+The above resources are good to get started/interested to a topic but the real learning happens only when we get our hands dirty. The [wiki](https://en.wikipedia.org/wiki/Active_learning) article has good amount of information regarding this topic. This is one of the places where traditional educational systems have a leg up. Even though we can stream all the content. It's very hard to emulate the active learning which happens at schools/universities.  Clarification of doubts and peer to peer interaction are very vital . Nonetheless, if you are persistent and determined you can try these websites.
 
 | Resource                                                   | Topics                                   | Notes                                                        |
 | ---------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------ |
@@ -47,7 +47,7 @@ The above resources are good to get started/interested to a topic but the real l
 
 ## The Big Guns
 
-Internet has probably created an education system which is highly scalable and cheap , the massive open online courses (MOOCs) . A lot of prestigious institution such as Princeton, MIT, Stanford, Caltech already have many interesting courses without the loss of any rigor. But as with any medium , there are a cases where the quality of teaching is sub par . So do lookout for reviews in sites such as [class-central](https://www.class-central.com/) , [mooc-list](https://www.mooc-list.com/) to get a better idea of the courses before enrolling. 
+Internet has probably created an education system which is highly scalable and cheap , the massive open online courses (MOOCs) . A lot of prestigious institution such as Princeton, MIT, Stanford, Caltech already have many interesting courses without the loss of any rigor. But as with any medium , there are a cases where the quality of teaching is sub par . So do lookout for reviews in sites such as [class-central](https://www.class-central.com/) , [mooc-list](https://www.mooc-list.com/) to get a better idea of the courses before enrolling.
 
 | Resource                                            | Notes                                                        |
 | --------------------------------------------------- | ------------------------------------------------------------ |
@@ -57,6 +57,6 @@ Internet has probably created an education system which is highly scalable and c
 | [Stanford Lagunita](https://lagunita.stanford.edu/) | It's basically a EdX platform with courses from Stanford.    |
 | [NPTEL](http://www.nptel.ac.in/)                    | Indian version of Coursera. This site offers courses from IITs , IISc and other prestigious institutes from India. It follows a semester pattern of classes. Courses usually span 3 to 4 months and |
 
-One of the courses which I really liked was the [Algorithms](https://www.coursera.org/learn/algorithms-part1) course from Princeton by Robert Sedgewick and Kevin Wayne. The exposition and the assignments have totally The course authors have put in immense efforts into the course. The assignments, tests, automatic grading systems were all top notch. In fact Kevin Wayne himself used to answer a lot of queries in the forums. But this doesn't mean that it would be a cakewalk either. The only thing you'll have to have is the motivation and the perseverance to work through the course.  This course has definitely increased my regard for what it means to take a great course 
+One of the courses which I really liked was the [Algorithms](https://www.coursera.org/learn/algorithms-part1) course from Princeton by Robert Sedgewick and Kevin Wayne. The exposition and the assignments have totally The course authors have put in immense efforts into the course. The assignments, tests, automatic grading systems were all top notch. In fact Kevin Wayne himself used to answer a lot of queries in the forums. But this doesn't mean that it would be a cakewalk either. The only thing you'll have to have is the motivation and the perseverance to work through the course.  This course has definitely increased my regard for what it means to take a great course
 
 I would like to emphasis that MOOCs have their own share of disadvantages. Some MOOCs are very shallow in their curriculum. Hence even after completing the course, we don't get a in depth understanding of the subject. One could easily get intimidated by the sheer amount of content available. Hence it's better to start with a single course and see how it goes about.

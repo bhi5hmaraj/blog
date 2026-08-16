@@ -1,23 +1,23 @@
 ---
 title: "Semester at CMI"
 date: 2019-11-21
-tags: [cmi, education]
+tags: [cmi, education, handwritten]
 draft: true
 ---
 
 # Semester at CMI
 
-Time surely flies like an arrow ! 
+Time surely flies like an arrow !
 
-I just started my 2nd semester at CMI. Last semester I took 5 courses . Algorithms, Mathematical Logic, Theory of Computation, Introduction to Programming using Haskell and Theoretical Introduction to Computer Science. 
+I just started my 2nd semester at CMI. Last semester I took 5 courses . Algorithms, Mathematical Logic, Theory of Computation, Introduction to Programming using Haskell and Theoretical Introduction to Computer Science.
 
-Overall the semester went pretty great. 
+Overall the semester went pretty great.
 
 
 
 ## Algorithms
 
-I haven't taken such a rigorous algorithms course anywhere. We had to prove the correctness and running time of even the simplest algorithm (Insertion sort). Even though the course covered less material compared to a standard course, we spend a lot of time in proving things from scratch. 
+I haven't taken such a rigorous algorithms course anywhere. We had to prove the correctness and running time of even the simplest algorithm (Insertion sort). Even though the course covered less material compared to a standard course, we spend a lot of time in proving things from scratch.
 
 
 
@@ -29,7 +29,7 @@ As I have already taken a course on TOC before, it was a smooth ride. Even thoug
 
 ## TFCS
 
-TFCS was kind of like a discrete math course . We had 4 modules, namely 
+TFCS was kind of like a discrete math course . We had 4 modules, namely
 
 1. Graph Theory
 2. Combinatorics
@@ -37,7 +37,7 @@ TFCS was kind of like a discrete math course . We had 4 modules, namely
 4. Probability
 5. Some Applications
 
-TFCS was a fun course except for the linear algebra part, which was rushed. 
+TFCS was a fun course except for the linear algebra part, which was rushed.
 
 
 
@@ -57,6 +57,6 @@ I felt instead of diving directly to the proofs, more intuition about how all th
 
 ## Other activities
 
-### Pondi and Mahaballipuram trip 
+### Pondi and Mahaballipuram trip
 
- 
+
