@@ -2,8 +2,8 @@
 title: "Better thinking through writing"
 description: "Notes on writing as a tool for thinking."
 date: 2026-05-24
-tags: [writing, cognitive-gym, handwritten]
-draft: true
+tags: [writing, cognitive-gym, handwritten, quick-takes]
+draft: false
 ---
 
 - What is Writing

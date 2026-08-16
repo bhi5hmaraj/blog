@@ -17,10 +17,11 @@ const formatDate = (date: Date) =>
       <li data-post-tags={JSON.stringify(post.data.tags)} data-post-archive={post.data.date.toISOString().slice(0, 7)}>
         <a href={`/${basePath}/${post.id}/`}>{post.data.title}</a>
         <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
-        {post.data.tags.length > 0 && (
+        {(post.data.draft || post.data.tags.length > 0) && (
           <ul class="post-tags" aria-label="Tags">
+            {post.data.draft && <li><span class="draft-badge">draft</span></li>}
             {post.data.tags.map((tag) => (
-              <li><a class:list={{ "ai-badge": tag === "handwritten" || tag === "ai-assisted" }} href={`/${basePath}/?tag=${encodeURIComponent(tag)}`}>{tag}</a></li>
+              <li><a class:list={{ "ai-badge": tag === "handwritten" || tag === "ai-assisted", "quick-take-badge": tag === "quick-takes" }} href={`/${basePath}/?tag=${encodeURIComponent(tag)}`}>{tag}</a></li>
             ))}
           </ul>
         )}

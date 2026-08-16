@@ -310,15 +310,29 @@ article {
 .post-list p { margin: .4rem 0 0; color: var(--ink-soft); font-size: 1.05rem; line-height: 1.55; }
 .post-tags { display: flex; flex-wrap: wrap; gap: .6rem; margin: .25rem 0 0; padding: 0; list-style: none; }
 .post-tags a { font-family: "Caveat Variable", cursive; font-size: 1.2rem; }
-.ai-badge {
-  border: 1px solid #86a27e;
+.ai-badge,
+.quick-take-badge {
+  border: 1px solid;
   border-radius: 999px;
   padding: .02rem .5rem;
-  background: #e0e9da;
-  color: #355b3c;
   text-decoration: none;
 }
+.ai-badge { border-color: #86a27e; background: #e0e9da; color: #355b3c; }
+.quick-take-badge { border-color: #ad9463; background: #eee3c8; color: #674f25; }
 .ai-badge::before { content: "✦"; margin-right: .2em; font-family: Georgia, serif; font-size: .7em; }
+.quick-take-badge::before { content: "↯"; margin-right: .2em; font-family: Georgia, serif; font-size: .75em; }
+.draft-badge {
+  display: inline-block;
+  border: 1px solid #b27a58;
+  border-radius: 999px;
+  padding: .02rem .5rem;
+  background: #efded1;
+  color: #75452f;
+  font-family: "Caveat Variable", cursive;
+  font-size: 1.15rem;
+  line-height: 1.1;
+}
+.draft-badge::before { content: "✎"; margin-right: .2em; font-family: Georgia, serif; font-size: .7em; }
 .metadata {
   color: var(--muted);
   font-family: "Caveat Variable", cursive;
@@ -336,7 +350,7 @@ article {
 article { padding-block: 4rem 8rem; }
 .article-header { margin-bottom: 3.5rem; }
 .metadata { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.25rem; }
-.metadata span::before { content: "·"; margin-right: .65rem; }
+.metadata > span:not(.draft-badge)::before { content: "·"; margin-right: .65rem; }
 .article-body { font-size: 1.08rem; }
 .article-body > :first-child { margin-top: 0; }
 .article-body h2 { margin-top: 3.25rem; }
@@ -431,6 +445,8 @@ html[data-theme="dark"] .sunlight { opacity: 0; }
 html[data-theme="dark"] pre.astro-code { background-color: var(--shiki-dark-bg) !important; color: var(--shiki-dark) !important; }
 html[data-theme="dark"] pre.astro-code span { color: var(--shiki-dark) !important; }
 html[data-theme="dark"] .ai-badge { border-color: #607b5f; background: #263226; color: #b5d0ad; }
+html[data-theme="dark"] .quick-take-badge { border-color: #806d46; background: #312b20; color: #d4bd8d; }
+html[data-theme="dark"] .draft-badge { border-color: #835c47; background: #35261f; color: #d5a98d; }
 html[data-theme="dark"] .sunlight-scene {
   opacity: .3;
   transform: matrix3d(.8333, .0833, 0, .0003, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
