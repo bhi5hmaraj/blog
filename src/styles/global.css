@@ -269,15 +269,16 @@ article {
 .filtered-heading { margin: 0 0 1rem; color: var(--muted); font-family: "Caveat Variable", cursive; font-size: 1.35rem; }
 
 .writing-mobile-index { display: none; }
-.writing-sidebar { position: sticky; top: 2rem; grid-row: 1; }
+.writing-sidebar { position: sticky; top: 1rem; grid-row: 1; max-height: calc(100vh - 2rem); overflow-y: auto; }
 .writing-archives { grid-column: 1; border-right: 1px solid var(--line); padding-right: 1.25rem; }
 .writing-tags { grid-column: 3; border-left: 1px solid var(--line); padding-left: 1.25rem; }
 .writing-results { grid-column: 2; grid-row: 1; }
+.writing-index { display: block; }
 .writing-index summary { display: none; }
 .writing-index h2 { margin: 0 0 .75rem; font-family: "Caveat Variable", cursive; font-size: 1.55rem; }
 .writing-index h2:not(:first-child) { margin-top: 2rem; }
 .writing-index ul { margin: 0; padding: 0; list-style: none; }
-.writing-index a { display: flex; justify-content: space-between; gap: .75rem; padding-block: .22rem; font-family: "Caveat Variable", cursive; font-size: 1.18rem; }
+.writing-index a { display: flex; justify-content: space-between; gap: .75rem; padding-block: .22rem; white-space: nowrap; font-family: "Caveat Variable", cursive; font-size: 1.18rem; }
 .writing-index a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 .writing-index span { color: var(--muted); }
 .archive-group { scroll-margin-top: 2rem; }
