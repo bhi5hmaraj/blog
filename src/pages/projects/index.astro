@@ -2,7 +2,10 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getPublishedProjects } from "../../lib/projects";
 
-const projects = await getPublishedProjects();
+const projectOrder = new Map(["simulacra", "babelback", "ai-risk-demo", "rio", "bandicoot"].map((id, index) => [id, index]));
+const projects = (await getPublishedProjects()).sort((a, b) =>
+  (projectOrder.get(a.id) ?? Infinity) - (projectOrder.get(b.id) ?? Infinity)
+);
 const tags = [...new Set(projects.flatMap((project) => project.data.tags))].sort();
 const formatDate = (date: Date) =>
   date.toLocaleDateString("en-GB", { month: "short", year: "numeric" });

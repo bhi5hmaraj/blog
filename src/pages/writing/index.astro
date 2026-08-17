@@ -21,22 +21,34 @@ const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().s
     <h1>Writing</h1>
     <p class="page-intro">Essays, explanations, and things I’m trying to understand.</p>
     <div class="writing-grid">
-      <details class="writing-index" aria-label="Browse writing" open>
+      <details class="writing-index writing-mobile-index" aria-label="Browse writing">
         <summary>Archives &amp; tags</summary>
+        <nav class="writing-archives" aria-label="Archives">
+          <h2>Archives</h2>
+          <ul>
+            {archives.map(({ key, label, count }) => (
+              <li><a href={`#archive-${key}`}>{label} ({count})</a></li>
+            ))}
+          </ul>
+        </nav>
+        <nav class="writing-tags" aria-label="Tags">
+          <h2>Tags</h2>
+          <ul>
+            <li><a href="/writing/">all <span>{posts.length}</span></a></li>
+            {tags.map(({ tag, count }) => (
+              <li><a href={`/writing/?tag=${encodeURIComponent(tag)}`} data-tag={tag}>{tag} <span>{count}</span></a></li>
+            ))}
+          </ul>
+        </nav>
+      </details>
+      <nav class="writing-index writing-sidebar writing-archives" aria-label="Archives">
         <h2>Archives</h2>
         <ul>
           {archives.map(({ key, label, count }) => (
             <li><a href={`#archive-${key}`}>{label} ({count})</a></li>
           ))}
         </ul>
-        <h2>Tags</h2>
-        <ul>
-          <li><a href="/writing/">all <span>{posts.length}</span></a></li>
-          {tags.map(({ tag, count }) => (
-            <li><a href={`/writing/?tag=${encodeURIComponent(tag)}`} data-tag={tag}>{tag} <span>{count}</span></a></li>
-          ))}
-        </ul>
-      </details>
+      </nav>
       <div class="writing-results">
         <p class="filtered-heading" data-filter-heading hidden></p>
         {archives.map(({ key, label, posts: archivePosts }) => (
@@ -46,15 +58,21 @@ const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().s
           </section>
         ))}
       </div>
+      <nav class="writing-index writing-sidebar writing-tags" aria-label="Tags">
+        <h2>Tags</h2>
+        <ul>
+          <li><a href="/writing/">all <span>{posts.length}</span></a></li>
+          {tags.map(({ tag, count }) => (
+            <li><a href={`/writing/?tag=${encodeURIComponent(tag)}`} data-tag={tag}>{tag} <span>{count}</span></a></li>
+          ))}
+        </ul>
+      </nav>
     </div>
   </section>
 </BaseLayout>
 
 <script is:inline>
   (() => {
-    const index = document.querySelector(".writing-index");
-    if (index instanceof HTMLDetailsElement && matchMedia("(max-width: 600px)").matches) index.open = false;
-
     const params = new URLSearchParams(location.search);
     const tag = params.get("tag");
     if (!tag) return;
