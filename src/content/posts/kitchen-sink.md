@@ -13,3 +13,4 @@ draft: true
 5. Health notes and exercise
 6. Functional programming
 7. AI alignment, my views on it, and the sociological aspects
+8. Newcomb’s problem, Scott Aaronson, and oracles

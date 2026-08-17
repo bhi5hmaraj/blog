@@ -21,7 +21,8 @@ const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().s
     <h1>Writing</h1>
     <p class="page-intro">Essays, explanations, and things I’m trying to understand.</p>
     <div class="writing-grid">
-      <aside class="writing-index" aria-label="Browse writing">
+      <details class="writing-index" aria-label="Browse writing" open>
+        <summary>Archives &amp; tags</summary>
         <h2>Archives</h2>
         <ul>
           {archives.map(({ key, label, count }) => (
@@ -35,8 +36,8 @@ const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().s
             <li><a href={`/writing/?tag=${encodeURIComponent(tag)}`} data-tag={tag}>{tag} <span>{count}</span></a></li>
           ))}
         </ul>
-      </aside>
-      <div>
+      </details>
+      <div class="writing-results">
         <p class="filtered-heading" data-filter-heading hidden></p>
         {archives.map(({ key, label, posts: archivePosts }) => (
           <section class="archive-group" id={`archive-${key}`}>
@@ -51,6 +52,9 @@ const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().s
 
 <script is:inline>
   (() => {
+    const index = document.querySelector(".writing-index");
+    if (index instanceof HTMLDetailsElement && matchMedia("(max-width: 600px)").matches) index.open = false;
+
     const params = new URLSearchParams(location.search);
     const tag = params.get("tag");
     if (!tag) return;
