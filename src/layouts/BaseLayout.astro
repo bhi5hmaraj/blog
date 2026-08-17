@@ -14,7 +14,7 @@ interface Props {
 
 const {
   title = "Bhishma Raj",
-  description = "Writing about systems, AI, institutions, programming, math, and things I am trying to understand.",
+  description = "Writing about systems, AI, institutions, programming, math, psychology, and things I am trying to understand.",
   minimal = false,
 } = Astro.props;
 const pageTitle = title === "Bhishma Raj" ? title : `${title} | Bhishma Raj`;
@@ -27,6 +27,7 @@ const pageTitle = title === "Bhishma Raj" ? title : `${title} | Bhishma Raj`;
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
     <script is:inline>
       try {
         if (localStorage.getItem("theme") === "dark") document.documentElement.dataset.theme = "dark";

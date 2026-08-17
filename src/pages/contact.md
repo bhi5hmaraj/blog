@@ -6,7 +6,7 @@ description: Contact Bhishma Raj and find him elsewhere online.
 
 # Contact
 
-If you’d like to talk, [book an appointment](https://calendar.app.google/UnJvSR3Yw5Vwdpe18) or email me at **matib275 at gmail dot com**.
+If you’d like to chat or just catch up, feel free to [block some time on my calendar](https://calendar.app.google/UnJvSR3Yw5Vwdpe18). You can also email me at **matib275 at gmail dot com**.
 
 ## Socials
 
