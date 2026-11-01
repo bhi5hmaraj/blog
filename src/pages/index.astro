@@ -1,6 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
+import { getPublishedPosts } from "../lib/posts";
+
+const latestPosts = (await getPublishedPosts()).filter((post) => !post.data.draft).slice(0, 5);
+const formatDate = (date: Date) =>
+  date.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 ---
 
 <BaseLayout minimal>
@@ -26,5 +31,35 @@ import ThemeToggle from "../components/ThemeToggle.astro";
       <a href="/contact">contact</a>
       <a href="/resources">resources</a>
     </nav>
+
+    <section class="whats-new" aria-labelledby="whats-new-heading">
+      <h2 id="whats-new-heading">What's new</h2>
+      <ul class="latest-posts" role="list">
+        {latestPosts.map((post) => (
+          <li>
+            <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+            <a href={`/writing/${post.id}/`}>{post.data.title}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
   </section>
 </BaseLayout>
+
+<style>
+  .whats-new h2 { margin: 3rem 0 1rem; font-size: 1.35rem; }
+  .latest-posts { margin: 0; padding: 0; list-style: none; }
+  .latest-posts li {
+    display: grid;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    gap: .75rem;
+    align-items: baseline;
+    padding-block: .6rem;
+    border-top: 1px solid var(--line);
+  }
+  .latest-posts time { color: var(--muted); font-size: .8rem; }
+
+  @media (max-width: 500px) {
+    .latest-posts li { grid-template-columns: 1fr; gap: .1rem; }
+  }
+</style>

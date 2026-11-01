@@ -2,7 +2,7 @@
 title: "How do we understand the current AI safety landscape?"
 description: "My views on AI safety and the incentives driving the race."
 date: 2026-09-30
-tags: [ai-safety, ai-governance, ai-assisted]
+tags: [ai-safety, ai-governance, handwritten]
 draft: false
 ---
 

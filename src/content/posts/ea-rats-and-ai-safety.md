@@ -2,7 +2,7 @@
 title: "EA, rats, and AI safety"
 description: "My views on the people, institutions, and incentives around EA and AI safety."
 date: 2026-09-30
-tags: [ea, rationality, ai-safety, institutions, ai-assisted]
+tags: [ea, rationality, ai-safety, institutions, handwritten]
 draft: false
 ---
 

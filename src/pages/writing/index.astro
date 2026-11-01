@@ -27,28 +27,20 @@ const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().s
           <h2>Archives</h2>
           <ul>
             {archives.map(({ key, label, count }) => (
-              <li><a href={`#archive-${key}`}>{label} ({count})</a></li>
+              <li><a href={`#archive-${key}`}><span>{label}</span><span class="index-count">{count}</span></a></li>
             ))}
           </ul>
         </nav>
         <nav class="writing-tags" aria-label="Tags">
           <h2>Tags</h2>
           <ul>
-            <li><a href="/writing/">all <span>{posts.length}</span></a></li>
+            <li><a href="/writing/"><span>all</span><span class="index-count">{posts.length}</span></a></li>
             {tags.map(({ tag, count }) => (
-              <li><a href={`/writing/?tag=${encodeURIComponent(tag)}`} data-tag={tag}>{tag} <span>{count}</span></a></li>
+              <li><a href={`/writing/?tag=${encodeURIComponent(tag)}`} data-tag={tag}><span>{tag}</span><span class="index-count">{count}</span></a></li>
             ))}
           </ul>
         </nav>
       </details>
-      <nav class="writing-index writing-sidebar writing-archives" aria-label="Archives">
-        <h2>Archives</h2>
-        <ul>
-          {archives.map(({ key, label, count }) => (
-            <li><a href={`#archive-${key}`}>{label} ({count})</a></li>
-          ))}
-        </ul>
-      </nav>
       <div class="writing-results">
         <p class="filtered-heading" data-filter-heading hidden></p>
         {archives.map(({ key, label, posts: archivePosts }) => (
@@ -58,15 +50,27 @@ const archives = [...Map.groupBy(posts, (post) => post.data.date.toISOString().s
           </section>
         ))}
       </div>
-      <nav class="writing-index writing-sidebar writing-tags" aria-label="Tags">
-        <h2>Tags</h2>
-        <ul>
-          <li><a href="/writing/">all <span>{posts.length}</span></a></li>
-          {tags.map(({ tag, count }) => (
-            <li><a href={`/writing/?tag=${encodeURIComponent(tag)}`} data-tag={tag}>{tag} <span>{count}</span></a></li>
-          ))}
-        </ul>
-      </nav>
+      <aside class="writing-index writing-sidebar">
+        <details class="writing-tags">
+          <summary>Tags</summary>
+          <nav aria-label="Tags">
+            <ul>
+              <li><a href="/writing/"><span>all</span><span class="index-count">{posts.length}</span></a></li>
+              {tags.map(({ tag, count }) => (
+                <li><a href={`/writing/?tag=${encodeURIComponent(tag)}`} data-tag={tag}><span>{tag}</span><span class="index-count">{count}</span></a></li>
+              ))}
+            </ul>
+          </nav>
+        </details>
+        <nav class="writing-archives" aria-label="Archives">
+          <h2>Archives</h2>
+          <ul>
+            {archives.map(({ key, label, count }) => (
+              <li><a href={`#archive-${key}`}><span>{label}</span><span class="index-count">{count}</span></a></li>
+            ))}
+          </ul>
+        </nav>
+      </aside>
     </div>
   </section>
 </BaseLayout>
