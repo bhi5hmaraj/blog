@@ -1,0 +1,64 @@
+---
+import shelves from "../data/goodreads.json";
+
+interface Props {
+  shelf: keyof typeof shelves;
+}
+
+const { shelf } = Astro.props;
+const widget = shelves[shelf];
+const shelfUrl = `https://www.goodreads.com/review/list/14350960-bhishmaraj?shelf=${shelf}`;
+const widgetClass = (name: string) => `gr_custom_${name}_${widget.widgetId}`;
+---
+
+<section class="goodreads-shelf" aria-label={widget.label}>
+  <div id={`gr_custom_widget_${widget.widgetId}`}>
+    <div class={widgetClass("container")}>
+      <h3 class={widgetClass("header")}>
+        <a href={shelfUrl} rel="nofollow">Bhishmaraj's bookshelf: {shelf}</a>
+      </h3>
+      {widget.books.map((book) => (
+        <div class={widgetClass("each_container")}>
+          <div class={widgetClass("book_container")}>
+            <a href={book.url} rel="nofollow" aria-label={book.title}>
+              <img src={book.cover} alt="" width="50" height="75" loading="lazy" />
+            </a>
+          </div>
+          {book.rating > 0 && (
+            <div class={widgetClass("rating")} aria-label={`${book.rating} out of 5 stars`}>
+              {book.rating}/5
+            </div>
+          )}
+          <div class={widgetClass("title")}>
+            <a href={book.url} rel="nofollow">{book.title}</a>
+          </div>
+          <div class={widgetClass("author")}>
+            by <a href={book.authorUrl} rel="nofollow">{book.author}</a>
+          </div>
+          {book.tags && <div class={widgetClass("tags")}>tagged: {book.tags}</div>}
+          {book.review && <div class={widgetClass("review")}>{book.review}</div>}
+        </div>
+      ))}
+      <p><a href={shelfUrl} rel="nofollow">View on Goodreads</a></p>
+    </div>
+  </div>
+  <script is:inline src={widget.src} async></script>
+</section>
+
+<style>
+  .goodreads-shelf { min-width: 0; }
+  .goodreads-shelf :global([class^="gr_custom_header_"]) { margin: 0 0 1rem; font-size: 1.2rem; line-height: 1.3; }
+  .goodreads-shelf :global([class^="gr_custom_each_container_"]) {
+    display: flow-root;
+    min-height: 5rem;
+    padding-block: 1rem;
+    border-top: 1px solid var(--line);
+  }
+  .goodreads-shelf :global([class^="gr_custom_book_container_"]) { float: left; width: 50px; margin: 0 .75rem .5rem 0; }
+  .goodreads-shelf :global([class^="gr_custom_book_container_"] img) { display: block; width: 50px; height: 75px; object-fit: contain; object-position: top; }
+  .goodreads-shelf :global([class^="gr_custom_title_"]) { font-size: 1rem; line-height: 1.4; }
+  .goodreads-shelf :global([class^="gr_custom_author_"]) { margin-top: .25rem; color: var(--muted); font-size: .82rem; line-height: 1.4; }
+  .goodreads-shelf :global([class^="gr_custom_tags_"]) { margin-top: .25rem; color: var(--muted); font-size: .75rem; line-height: 1.4; }
+  .goodreads-shelf :global([class^="gr_custom_rating_"]) { float: right; margin: 0 0 .5rem .5rem; font-size: .8rem; line-height: 1; }
+  .goodreads-shelf :global([class^="gr_custom_review_"]) { margin-top: .75rem; color: var(--ink-soft); font-size: .85rem; line-height: 1.5; }
+</style>

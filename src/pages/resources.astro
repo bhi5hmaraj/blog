@@ -1,0 +1,41 @@
+---
+import AboutLayout from "../layouts/AboutLayout.astro";
+import GoodreadsShelf from "../components/GoodreadsShelf.astro";
+---
+
+<AboutLayout frontmatter={{ title: "Resources", description: "Things Bhishma Raj finds important and wants to share." }}>
+  <h1>Resources</h1>
+  <p>Things I find important and want to share.</p>
+
+  <h2>AGI</h2>
+  <ul>
+    <li><a href="https://t.me/+KiXmPID4DFVhOGNl">AGI posts on Telegram</a></li>
+  </ul>
+
+  <h2>Recommended links</h2>
+  <ul>
+    <li><a href="/writing/learning-in-the-internet-age/">Learning in the internet age</a></li>
+    <li><a href="https://paulgraham.com/articles.html">Paul Graham's essays</a></li>
+    <li><a href="https://waitbutwhy.com/">Wait But Why</a></li>
+    <li><a href="https://www.scottaaronson.com/blog/">Shtetl-Optimized</a></li>
+    <li><a href="https://www.smbc-comics.com/">SMBC</a></li>
+    <li><a href="https://www.lesswrong.com/">LessWrong</a></li>
+    <li><a href="https://xkcd.com/">xkcd</a></li>
+    <li><a href="https://www.overcomingbias.com/">Overcoming Bias</a></li>
+    <li><a href="https://www.goodreads.com/review/list/14350960-bhishmaraj?shelf=currently-reading">My Goodreads shelf</a></li>
+  </ul>
+
+  <h2>Books</h2>
+  <div class="goodreads-shelves">
+    <GoodreadsShelf shelf="to-read" />
+    <GoodreadsShelf shelf="read" />
+  </div>
+</AboutLayout>
+
+<style>
+  .goodreads-shelves { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+
+  @media (max-width: 800px) {
+    .goodreads-shelves { grid-template-columns: 1fr; }
+  }
+</style>
